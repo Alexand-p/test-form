@@ -1,0 +1,115 @@
+.production{
+  background-color: white;
+  box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+  &-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    grid-gap: 5px;
+    grid-template-areas: "p1 p2 p3"
+                         "p4 p5 p6";
+               
+                         &__image{
+                          height: 250px;
+                          width: 200px;
+                          position: relative;
+                          overflow: hidden;
+                          &:hover{
+                            transform: scale(1.1);
+                            transition: transform 0.5s;
+                          }
+                        }
+                        
+&__item{
+  height: 650px;
+  max-width: 450px;
+  margin: 5px;
+  text-align: center;
+  // &:hover{
+  //   transition: background-color 0.5s;
+  // }
+  
+  .image{
+    background-color: white;
+    
+  }
+}
+&__action{
+  color: $color-text;
+  margin-bottom: 0px;
+}
+#11:nth-of-type(1){
+  grid-area: p1;
+}
+#12:nth-of-type(2){
+ grid-area: p2;
+}
+#13:nth-of-type(3){
+ grid-area: p3;
+}
+#14:nth-of-type(4){
+ grid-area: p4;
+}
+#15:nth-of-type(5){
+ grid-area: p5;
+}
+#16:nth-of-type(6){
+ grid-area: p6;
+}
+}
+}
+@media (max-width: 1600px){
+  .production{
+    max-width: 90%;
+  }
+}
+@media (max-width: 1235px){
+  .production{
+    max-width: 90%;
+  }
+}
+@media (max-width: 992px){
+  .production{
+    max-width: 90%;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px){
+  .production{
+    max-width: 90%;
+  }
+  .production-container{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr );
+  grid-gap: 5px;
+  grid-template-areas: "p1 p2"
+                      "p3 p4"
+                       "p5 p6";
+  }
+}
+@media(max-width: 767.8px) and (min-width: 576px){
+  .production{
+    margin: 0 auto;
+    max-width: 90%;
+  }
+  .production-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  .production-container__text{
+    margin: 0 10px;
+  }
+}
+@media (max-width: 575.8px){
+  .production{
+    max-width: 90%;
+  }
+  .production-titel{
+    text-align: center;
+  }
+  .production-container{
+    display: block;
+  }
+  .production-container__text{
+    margin: 0 10px;
+  }
+  }

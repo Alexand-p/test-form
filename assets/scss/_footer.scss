@@ -1,0 +1,50 @@
+.footer{
+  height: 25vh;
+  background-color: $color-cap;
+  &-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  &-item{
+    &__text{
+      color: white;
+      
+      &--app{
+        font-weight: 100;
+        letter-spacing: 5px;
+        margin-bottom: 0;
+        color: white;
+      }
+      &--down{
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-top: 0;
+      }
+    }  
+    &__icon{
+    display: flex;
+    justify-content: center;
+    min-width: 240px;
+    min-height: 50px;
+    // color: #ffffff;
+    // background-color: white;
+    font-size: 2.25em;
+    margin: 10px;
+    &--link{
+      padding: 10px;
+      &::after {
+        position: absolute;
+        width: 75px;
+        height: 2px;
+        content: "";
+        background-color: rgba(255, 255, 255, 0.1);
+        top: 60px;
+        left: -140px;
+      }
+    }
+    }
+  }
+ 
+}

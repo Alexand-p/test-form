@@ -1,0 +1,95 @@
+.stories{
+  background-color: $color-stories;
+  box-shadow: -18px 0 20px -20px #333, 
+  18px 0 20px -20px #333;
+  &-container{
+  
+    &__item{
+background-color: hotpink;
+    }
+    &__block{
+     margin: 10px ;
+     padding: 20px ;
+    }
+    // &__header{
+    // }
+    &__subtitel{
+      font-family: 'Dancing Script', cursive;
+      color: red;
+      font-size:32px;
+      font-weight: 700;
+      
+    }
+    &__event{
+
+      font-family: 'Dancing Script', cursive;
+      text-align: right;
+      font-size: 25px;
+      font-weight: 700;
+    }
+    // &__image{
+    
+    // }
+    &__text{
+      display: inline-block;
+      max-width: 500px;
+      font-family: 'Dancing Script', cursive;
+      font-size: 18px;
+      text-align: right;
+    }
+  }
+}
+.stoiries-container__cap{
+  text-align: center;
+  }
+  .stoiries-container__titel{
+    color: red;
+    font-size: 25x;
+    margin: 0px;
+  }
+  .stoiries-container__sub{
+  color: red;
+  max-width: 550px;
+  display: inline-block;
+  font-size: 32px;
+  margin: 0px 0px 30px;
+
+  }
+  .stoiries-container__subtext{
+    font-size: 18px;
+   font-weight: 400;
+  }
+  @media (max-width: 1600px){
+    .stories{
+      max-width: 90%;
+    }
+  }
+  @media (max-width: 992px){
+    .stories{
+      max-width: 90%;
+    }
+  }
+  @media (max-width: 992px) and (min-width: 768px){
+    .stories{
+      max-width: 90%;
+    }
+    .stories-container__image,img{
+      max-width:620px;
+    }
+  }
+  @media(max-width: 767.8px) and (min-width: 576px){
+    .stories{
+      max-width: 90%;
+    }
+    .stories-container__image,img{
+      max-width:450px;
+    }
+  }
+  @media (max-width: 575.8px){
+    .stories{
+      max-width: 90%;
+      }
+      .stories-container__image,img{
+        max-width:400px;
+      }
+  }

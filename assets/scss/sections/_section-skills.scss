@@ -1,0 +1,114 @@
+.tutorials{
+  &-container{
+    
+    &__block{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr );
+      grid-gap: 5px;
+      grid-template-areas: "t1 t1 "
+                           "t3 t2 "
+                           "t4 t5"
+                           "t7 t8"
+                           "t8 t8 ";
+    }
+    &__item{
+      margin: 5px;
+      padding: 20px ;
+      text-align: center;
+    }
+    &__item:hover{
+      transform: scale(0.9);
+      transition: transform 0.8s;
+      box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+      background-color:$color-active;
+    }
+    &__titel{
+      font-size: 25px;
+      
+    }
+    &__text{
+      font-family: 'Dancing Script', cursive;
+      font-size: 18px;
+    }
+    &__number{
+      font-size:32px;
+      font-weight: 900;
+      font-family: 'Dancing Script', cursive;
+    }
+  }
+}
+@media (max-width: 1600px){
+  .tutorials-container__block{
+    gap: 1px;
+  }
+  .tutorials-container__item{
+    padding: 0 0 5px 0;
+  }
+  iframe{
+    width: 500px;
+    height: 300px;
+  }
+}
+@media (max-width: 1235px){
+  .tutorials{
+    margin: 5px 10px;
+  }
+  .tutorials-container__block{
+    display: block;
+  }
+  .tutorials-container__titel{
+    text-align: center;
+  }
+}
+@media (max-width: 992px){
+  .tutorials{
+    margin: 5px 10px;
+  }
+  .tutorials-container__block{
+    display: block;
+  }
+  .tutorials-container__titel{
+    text-align: center;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px){
+  .tutorials{
+    margin: 5px 10px;
+  }
+  .tutorials-container__block{
+    display: block;
+  }
+  .tutorials-container__titel{
+    text-align: center;
+  }
+}
+@media(max-width: 767.8px) and (min-width: 576px){
+  .tutorials{
+    margin: 5px 10px;
+  }
+  .tutorials-container__block{
+    display: block;
+  }
+  .tutorials-container__titel{
+    text-align: center;
+  }
+  iframe{
+    width: 450px;
+    height: 300px;
+  }
+}
+@media (max-width: 575.8px){
+  .tutorials{
+    margin: 5px 10px;
+  }
+  .tutorials-container__block{
+    display: block;
+  }
+  iframe{
+    width: 300px;
+    height: 250px;
+  }
+  .tutorials-container__titel{
+    text-align: center;
+  }
+}
