@@ -90,7 +90,7 @@ var submitBtn = form.querySelector('.form-container__button')
 var number =  form.querySelector('.form-container__input')
 var fields = form.querySelectorAll('.field')
 
-var success = 'Данные приняты'
+var success = 'Данные приняты' 
 
 
 
@@ -99,6 +99,8 @@ form.addEventListener('submit', function(event){
     event.preventDefault()
     console.log('click on submit')
     console.log('Number: ', number.value)
+
+
 
 var errors = form.querySelectorAll('.error')
 
@@ -114,7 +116,11 @@ for(var i = 0 ; i < fields.length; i++){
         error.innerHTML = 'Cannot be blank'
         form[i].parentElement.insertBefore(error, fields[i])
     } else{
-        alert(success)
+        alert(success + '\n' +'Ваш номер :'+ number.value)
+        // var yourNumb = document.createElement('div')
+        // yourNumb.className = 'yourNumber'
+        // yourNumb.innerHTML = number.value 
+        // form[i].parentElement.innerHTML(yourNumb, fields[i])
     }
 }   
 })
